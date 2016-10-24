@@ -1,4 +1,4 @@
-package com.handshakers.onlinebanking;
+package com.handshakers.onlinebanking.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
