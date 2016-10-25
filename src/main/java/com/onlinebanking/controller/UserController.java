@@ -1,4 +1,4 @@
-package com.handshakers.onlinebanking.controller;
+package com.onlinebanking.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.handshakers.onlinebanking.domain.*;
+import com.onlinebanking.domain.*;
 @Controller
 public class UserController {
 		@RequestMapping(value={"/userForm"},method=RequestMethod.GET)
