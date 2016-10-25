@@ -9,17 +9,29 @@
 
 <html>
 <head>
+<<<<<<< HEAD
 <title>Home</title>
 </head>
 <body>
 	<h1>Hello ABC Bank!</h1>
 
+=======
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">@import url("<c:url value="/css/home.css"/>");</style>
+<title>Online Banking System</title>
+</head>
+<body>
+>>>>>>> 505ec25428829fbbb5590fcb86a781a8e460ae6c
 	<P>The time on the server is ${serverTime}.</P>
 	<security:authorize access="isAnonymous()">
 		<!-- WHICH ONE? depends on basic form OR CUSTOM -->
 		<!--a href="<spring:url value='/spring_security_login' />" class="btn btn-default pull-right"> Login</a-->
 		<a href="<spring:url value='/login' />"> Login</a>
 	</security:authorize>
+<<<<<<< HEAD
 
 	<p>
 		<security:authorize access="isAuthenticated()">
@@ -27,5 +39,36 @@
 			<a href="<spring:url  value="/loan/addLoan" />">ApplyForLoan</a>
 			<a href="<spring:url  value="/doLogout" />">Logout</a>
 		</security:authorize>
+=======
+	<p>
+		<security:authorize access="isAuthenticated()">
+			<p>You are under secured browsing</p>
+			<a href="<spring:url  value="/doLogout" />">Logout</a>
+		</security:authorize>
+	</p>
+	<div id="wrapper">
+		<div>
+			<div id="header">Online Banking System</div>
+			<!--<span style="float:left;">We accept every acknowledgement!</span>-->
+			<div style="height: 25px"></div>
+			<div style="border: 1px solid black">
+				<ul class="tab">
+					<li><a href="javascript:void(0)">Create an Account</a></li>
+					<li><a href="javascript:void(0)">Loan</a></li>
+					<li><a href="javascript:void(0)">Money Transfer</a></li>
+					<li><a href="javascript:void(0)">Deposit Amount</a></li>
+					<li style="float: left; margin-left: 28%"><a
+						href="javascript:void(0)">Login</a></li>
+					<li><a href="javascript:void(0)">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	window.onload = (function(){
+		alert();
+	})();
+	</script>
+>>>>>>> 505ec25428829fbbb5590fcb86a781a8e460ae6c
 </body>
 </html>
